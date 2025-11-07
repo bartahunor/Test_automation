@@ -58,3 +58,30 @@ https://www.zaptest.com/hu/mi-az-a-rendszerteszteles-melyre-merules-a-megkozelit
 #### Mi a különbség a statikus és dinamikus tesztelés között?
 A statikus tesztelés a forráskód vagy dokumentáció vizsgálatára összpontosít, anélkül, hogy a programot futtatnák, míg a dinamikus tesztelés a program futtatásával és az eredmények elemzésével ellenőrzi a szoftver viselkedését
 https://www.guru99.com/hu/static-dynamic-testing.html
+
+## 3. Szoftverfejlesztési és tesztelési modellek(vízesés, V-modell, agilis modell):
+### Vízesés modell:
+A vízesésmodell a projekt tevékenységeinek sorozatos lineáris szakaszokra bontása, ahol az egyes szakaszok az előző fázis eredményeitől függnek, és az adott feladat specializációjának felelnek meg.
+szoftverfejlesztésben inkább a kevésbé iteratív és rugalmatlan megközelítések közé tartozik
+
+<img src="https://centroszet.hu/tananyag/szervezes2/image003.jpg" alt="image" width="450" height="220">
+
+### V-modell:
+A szoftverfejlesztés során a V modell olyan fejlesztési folyamatot képvisel, amelyet a vízesésmodell kiterjesztésének tekinthetünk, és egy esete az általános V modellnek. A V modell a nevét onnan kapta, hogy két szára van, és így egy V betűhöz hasonlít. A modell ábrája a fejlesztés két folyamatának két megközelítését tükrözi, bemutatja a kapcsolatokat a fejlesztési életciklus egyes szakaszai és a kapcsolódó tesztelési szakaszok között. Top-down megközelítésként kifejezi a tervezési folyamat fentről lefelé történő haladását a diagram bal oldali ágában, míg bottom-up megközelítésben a jobb oldali ágban a tesztelési folyamat lentről felfelé halad. A vízszintes és a függőleges tengely az időt vagy a projekt teljességét (balról jobbra) és az absztrakció szintjét jelöli.
+
+<img src="https://szit.hu/lib/exe/fetch.php?media=oktatas:programozas:v-modell_uj.png" alt="image" width="450" height="300">
+
+###  Agilis modell:
+Az agilis tesztelés akkor kezdődik, amikor a projekt fejlesztése megkezdődik. Röviden, a tesztelést és a fejlesztést minden szakaszban integrálja. A legtöbb fejlesztő az agilis tesztelési piramisra hivatkozva gondol erre a folyamatra (erről később).
+Az agilis módszertan alkalmazása a tesztelésben azt jelenti, hogy a tesztelés a fejlesztési folyamat során folyamatosan történik, és szinte minden szakaszban bevonja a fejlesztőket, a tesztelőket és a tulajdonosokat.
+
+<img src="https://promanconsulting.hu/wp-content/uploads/2022/03/agilis-modszertanok-optimized.jpg" alt="image" width="450" height="300">
+
+### TDD modell
+A tesztvezérelt fejlesztés (Test-driven development, TDD) egy szoftverfejlesztési folyamat, ami egy nagyon rövid fejlesztési ciklus ismételgetésén alapul, tehát a követelményeket speciális teszt esetekként fogalmazzuk meg, a kódot pedig ehhez mérten írjuk meg, így az át fog menni a teszten. Ez tökéletes ellentéte a hagyományos szoftverfejlesztésnek, ami megengedi olyan kódrészletek meglétét is, amelyek nem felelnek meg teljesen a követelményeknek. A TDD összefüggésben áll az extrém programozás koncepciójával, miszerint először teszteljünk és ha minél többet tesztelünk, annál több hibát tudunk kiküszöbölni a kódban.
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/TDD_Global_Lifecycle.png/1920px-TDD_Global_Lifecycle.png" alt="image" width="300" height="220">
+<img src="https://cdn.codegym.cc/images/article/9d5eca2d-4750-4470-83bc-9d0147b2d611/512.jpeg" alt="image" width="300" height="220">
+
+### BDD modell
+A viselkedésvezérelt fejlesztés (behavior-driven development, BDD) egy agilis szoftverfejlesztési folyamat, amely ösztönzi az együttműködést a fejlesztők, a QA és a nem műszaki vagy üzleti résztvevők között egy szoftverkészítő projektben. Arra ösztönzi a csapatokat, hogy beszélgetéssel és konkrét példákkal hivatalossá tegyék az alkalmazás működésének közös megértését. A tesztvezérelt fejlesztésből (TDD) alakult ki. A viselkedésvezérelt fejlesztés ötvözi a TDD általános technikáit és elveit a tartományvezérelt tervezés és objektumorientált elemzés és tervezés ötleteivel, hogy a szoftverfejlesztő és -kezelő csapatok számára megosztott eszközöket és közös folyamatot biztosítson a szoftverfejlesztésben való együttműködéshez.
